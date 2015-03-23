@@ -1,5 +1,5 @@
 class IntroController < ApplicationController
-  def main
+  def index
     
   end
 end
