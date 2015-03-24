@@ -1,6 +1,8 @@
 
 $crisp-white: rgba(255,255,255, 1);
 
+$cool-white: rgba(255,255,255, .95);
+
 $gray: rgba(159,162,171, 1);
 
 $fb-blue: rgba(76,102,164, 1);
@@ -18,6 +20,8 @@ $turks-green: rgba(22, 173, 135, 1);
 $smooth-blue: rgba(22, 150, 173, 1);
 
 $cool-blue: rgba(173, 67, 22, 1);
+
+$clean-blue: rgba(100,100,255, .75);
 
 $deep-blue: rgba(22, 82, 173, 1);
 
@@ -48,3 +52,45 @@ $dark-gold: rgba(173, 100, 4, 1);
 $blue: rgba(4, 52, 173, 1);
 
 $blueblue: #0434AD;
+
+//FONTS
+
+$mont: 'Montserrat', sans-serif;
+
+$cursive: 'Great Vibes', cursive;
+
+
+//Box models
+.two-column{
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex; 
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: space-center;
+  justify-content: -webkit-space-center;
+  justify-content: -moz-space-center;
+  justify-content: -ms-space-center;
+  background-color: rgba(255,255,255, .99);
+  margin: 50px auto;
+  padding: 40px 20px 40px 20px;
+  max-width: 100%;
+  height: 1200px;
+  border: 2px solid $bronze-yellow;
+  box-shadow: 10px 7px 4px rgba(0,0,0, .3);
+}
+
+.div-reset{
+  display: inline; 
+  background-color: rgba(255,255,255, .99);
+  margin: 0px 0px 0px -10px;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  border-radius: 0px;
+}
+

@@ -1,0 +1,100 @@
+@import 'colors';
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border($color) {
+  border: 2px solid $color;
+}
+
+@mixin shadow{
+	text-shadow: 3px 1px rgba(100,100,255, .75), 4px 1px rgba(0,0,0, 1), 7px 2px $bronze-yellow; 
+ 
+}
+.super-wide{
+  max-width: 100%;
+}
+
+.basic-shape {
+  color: $bronze-yellow;
+  margin: auto;
+  text-align: center;
+}
+
+.outlined-shape{
+  @include border-radius(0px);
+  border: 1px solid #ccc;
+  padding: 2px;
+  color: $bronze-yellow;
+  margin: auto;
+  display: inline-block;
+}
+
+.streamlined-nav{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+    ul {
+      margin: auto;
+      padding: auto;
+      list-style: none;
+    }
+
+    li { display: inline-block; 
+      
+    }
+
+    a {
+      display: block;
+      padding: 6px 20px;
+      text-decoration: none;
+    }
+}
+
+body{
+  background: url("/assets/Burnside_mini.jpg") no-repeat fixed;
+  background-size: 100%;
+  font-family: $mont;
+}
+
+h1{
+  font-family: $cursive;
+  color: $cool-white;
+  font-size: 300px;
+  margin-top: 700px;
+  @extend .basic-shape;
+  @include shadow;
+}
+
+div{
+  @extend .outlined-shape;
+}
+
+.container{
+  @extend .two-column;
+  
+}
+
+.navigation{
+  @extend .streamlined-nav;
+  @extend .div-reset;
+  position: fixed;
+  top: 0px;
+  @include border($bronze-yellow);
+}
+
+#small{
+  @extend .div-reset;
+  margin-left: 10px;
+}
+
+p{
+  color: $bronze-yellow;
+  width: 90%;
+}
+
