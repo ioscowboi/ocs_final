@@ -1,7 +1,9 @@
 
 $crisp-white: rgba(255,255,255, 1);
 
-$cool-white: rgba(255,255,255, .95);
+$cool-white: rgba(200,200,200, 1);
+
+$red-white: rgba(255,200,200, 1);
 
 $gray: rgba(159,162,171, 1);
 
@@ -53,6 +55,8 @@ $blue: rgba(4, 52, 173, 1);
 
 $blueblue: #0434AD;
 
+$electric-blue: rgba(100,100,255, .75);
+
 //FONTS
 
 $mont: 'Montserrat', sans-serif;
@@ -74,12 +78,12 @@ $cursive: 'Great Vibes', cursive;
   justify-content: -webkit-space-center;
   justify-content: -moz-space-center;
   justify-content: -ms-space-center;
-  background-color: rgba(255,255,255, .99);
-  margin: 50px auto;
+  background-color: $almost-red;
+  margin: 50px auto 1000px -10px;
   padding: 40px 20px 40px 20px;
   max-width: 100%;
-  height: 1200px;
-  border: 2px solid $bronze-yellow;
+  height: 800px;
+  border: 5px solid $red;
   box-shadow: 10px 7px 4px rgba(0,0,0, .3);
 }
 
