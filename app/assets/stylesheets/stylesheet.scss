@@ -104,12 +104,17 @@ div{
   top: 0px;
   @include border($red);
   z-index: 20;
+  padding: 5px 20px 5px 20px;
 }
 
 #small{
   @extend .div-reset;
   margin-left: 10px;
   background-color: $almost-red;
+}
+
+#small i{
+  color: $crisp-white;
 }
 
 p{
